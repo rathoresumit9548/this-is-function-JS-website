@@ -1,0 +1,19 @@
+!DOCTYPE <html>
+<html lang="en">
+    <head>
+        <title>Temprature Converter</title>
+        <h1>Temprature Converter</h1>
+        <br>
+            FORMULA = (C * 9/5)+32
+    </head>
+    <body>
+        <script>
+            function celsiusToFahrenheit(celsius){
+                return (celsius * 9 /5) + 32;
+            }
+            let celsius = Number(prompt("Enter temperarture in celsius"));
+            let result = celsiusToFahrenheit(celsius);
+            alert("Temprature in Fahrenheit = " + result);
+        </script>
+    </body>
+</html>
