@@ -1,0 +1,22 @@
+!DOCTYPE <html>
+<html lang="en">
+    <head>
+        <title>Shopping bill with tax</title>
+        
+    </head>
+    <h1>Shopping bill with tax</h1>
+    <body>
+        <script>
+            function calculateGrandTotal(price, quantity){
+                let subtotal = price * quantity;
+                let tax = subtotal * 18 / 100;
+                let  total = subtotal + tax;
+                return total;
+            }
+            let price = Number(prompt("Enter price:"));
+            let quantity = Number(prompt("Enter quantity:"));
+            let result = calculateGrandTotal(price, quantity);
+            alert("final payable Amount = " + result);
+        </script>
+    </body>
+</html>
