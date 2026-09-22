@@ -1,0 +1,23 @@
+!DOCTYPE <html>
+<html lang="en">
+    <head>
+        <title>Portal Login Validator</title>
+    </head>
+    <h1>Portal Login Validator</h1>
+    <body>
+        <script>
+            function validateLogin(user, pass){
+                if (user == "admin" && pass == "1234"){
+                    return "Login Successful";
+                }
+                else{
+                    return "Invalid Credentials";
+                }
+            }
+            let username = prompt("Enter username:");
+            let password =prompt("Enter password:");
+            let result = validateLogin(username, password);
+            alert(result);
+        </script>
+    </body>
+</html>
